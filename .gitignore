@@ -1,2 +1,6 @@
 
+# holds API credentials and should never be pushed to origin repo
 config/api_config.py
+
+# for any testing purposes
+scratch/*
