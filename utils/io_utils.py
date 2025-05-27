@@ -13,14 +13,12 @@ def write_json(dict, uri):
     with open(uri, 'w') as outf:
         outf.write(json_obj)
 
-def read_yaml_dict(uri):
+def read_yaml(uri):
     """Reads in a dictionary from a yaml file uri (dict version)"""
     with open(uri, 'r') as f:
         return yaml.safe_load(f)
 
 def write_yaml(dict, uri):
     """Writes a yaml file from a dictionary"""
-    yaml_obj = yaml.safe_load(dict)
-
     with open(uri, 'w') as outf:
-        yaml.dump(yaml_obj, outf)
+        yaml.dump(dict, outf)
