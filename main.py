@@ -6,7 +6,7 @@ def main():
         test:'test',
         data:[1,2,3]
     }
-    uri = 
+    uri = ''
     utils.write_yaml(d, uri)
 
 if __name__ == "__main__":

@@ -3,4 +3,7 @@
 config/api_config.py
 
 # for any testing purposes
-scratch/*
+scratch
+
+# pycache files
+__pycache__
