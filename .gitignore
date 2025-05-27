@@ -2,6 +2,9 @@
 # holds API credentials and should never be pushed to origin repo
 config/api_config.py
 
+# holds email addresses/passwords/other information
+config/email_config.py
+
 # for any testing purposes
 scratch
 
