@@ -32,11 +32,12 @@ def format_email_body(job_list):
     return html
 
 def send_email(subject, body):
+    msg = MIMEMultipart("alternative")
     msg['Subject'] = subject
     msg['From'] = from_email
     msg['To'] = to_email
 
-    mime_html = MIMEText(html_content, 'html')
+    mime_html = MIMEText(body, 'html')
     msg.attach(mime_html)
 
     with smtplib.SMTP_SSL(smtp_server, smtp_port) as server:
