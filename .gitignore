@@ -10,3 +10,6 @@ scratch
 
 # pycache files
 __pycache__
+
+# vs workspace files
+*.code-workspace
