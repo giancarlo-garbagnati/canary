@@ -2,3 +2,4 @@
 PyYaml
 json
 googlesearch-python
+google-api-python-client
